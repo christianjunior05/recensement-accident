@@ -1,12 +1,8 @@
 <?php
 
-$dbb= new PDO('mysql:host=localhost;dbname=resencemment','root','');
-$countries= $dbb->prepare("SELECT * FROM ville");
-$countries -> execute();
+include "db.php"; // include de la connection a la base de données
 
-$data = $countries->fetchAll(PDO::FETCH_ASSOC) ;
+$cities = $db->prepare('SELECT * FROM villle');
+$cities->execute();
 
-
-
-
-?>
+$data = $cities->fetchAll(PDO::FETCH_OBJ);
