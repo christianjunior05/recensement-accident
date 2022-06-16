@@ -20,7 +20,7 @@
     
       <option value=""></option>
       <?php foreach ($data as $ville): ?>
-     <option value="<?= $ville->id?>"><?= $ville->nom ?></option>
+       <option value="<?= $ville->id?>"><?= $ville->ville ?></option>
      <?php endforeach; ?>
         <!-- <option name="Abidjan">Abidjan</option>
         <option name="Adzopé">Adzope</option>
